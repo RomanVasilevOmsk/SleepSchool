@@ -1,3 +1,3 @@
-$( document ).ready(function() {
-  console("setup");
-});
+// $( document ).ready(function() {
+//   console("setup");
+// });

@@ -1,0 +1,26 @@
+$block : ".mainLayout";
+
+#{$block}{
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-image: url("../images/main-background.png");
+  @media only screen and (-Webkit-min-device-pixel-ratio: 2){
+    background-image: url("../images/main-background@2x.png");
+  }
+  @media only screen and (-Webkit-min-device-pixel-ratio: 3){
+    background-image: url("../images/main-background@3x.png");
+  }
+
+  @media (max-width: $sm-width) {
+    background-image: url("../images/main-background-mobile.png");
+
+    @media only screen and (-Webkit-min-device-pixel-ratio: 2){
+      background-image: url("../images/main-background-mobile@2x.png");
+    }
+    @media only screen and (-Webkit-min-device-pixel-ratio: 3){
+      background-image: url("../images/main-background-mobile@3x.png");
+    }
+  }
+}
