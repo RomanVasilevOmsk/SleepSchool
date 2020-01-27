@@ -18,13 +18,12 @@
         <p class="mainLayout__header-title">Sleep School App</p>
       </header>
 
-      <div class="sleepSchoolApp__wrapper sleepSchoolApp__redeemCode-wrapper">
-        <h4 class="sleepSchoolApp__title">Redeem a Code</h4>
+      <div class="sleepSchoolApp__wrapper sleepSchoolApp__noAccess-wrapper">
+        <p class="sleepSchoolApp__noAccess-title">Your organisation’s plan does not include the Sleep School app.</p>
 
-        @@include('./partial/redeemCodeForm.html')
-
-        <footer class="sleepSchoolApp__footer">
-          <p class="sleepSchoolApp__footer-title">Need help?</p>
+        <footer class="sleepSchoolApp__noAccess-footer">
+          <p class="sleepSchoolApp__noAccess-footer-question">Want access to our app?</p>
+          <p class="sleepSchoolApp__noAccess-footer-label">Contact us at:</p>
           <a href="mailto:support@thesleepschool.org" class="sleepSchoolApp__footer-link link">support@thesleepschool.org</a>
         </footer>
       </div>

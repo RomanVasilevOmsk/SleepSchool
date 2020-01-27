@@ -14,6 +14,27 @@ $block : ".sleepSchoolApp";
     color: #FFFFFF;
     margin-bottom: 30px;
   }
+  &__input{
+    padding: 23px 15px;
+    font-size: 16px;
+    line-height: 17px;
+    color: #A2A2A2;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    &::-webkit-input-placeholder {
+      color: #A2A2A2;
+    }
+    &::-moz-placeholder {
+      color: #A2A2A2;
+    }
+    &:-ms-input-placeholder {
+      color: #A2A2A2;
+    }
+    &:-moz-placeholder {
+      color: #A2A2A2;
+    }
+  }
   &__btn{
     background: #F5A623;
     border-radius: 8px;
@@ -81,6 +102,19 @@ $block : ".sleepSchoolApp";
       }
       &-label{
         margin-bottom: 20px;
+      }
+    }
+  }
+  &__redeemCode{
+    &-wrapper{
+      margin-top: 80px;
+    }
+    &-form{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+      &-input{
+        margin-bottom: 35px;
       }
     }
   }
