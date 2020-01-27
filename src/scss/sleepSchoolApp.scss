@@ -1,0 +1,61 @@
+$block : ".sleepSchoolApp";
+
+#{$block}{
+  &__wrapper{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  &__btn{
+    background: #F5A623;
+    border-radius: 8px;
+    padding: 21px 0;
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-align: center;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  &__footer{
+    &-title{
+      font-size: 16px;
+      line-height: 17px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+    &-link{
+      font-size: 16px;
+      line-height: 17px;
+      color: #FFFFFF;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+  &__chooseAnApp{
+    &-wrapper{
+      margin-top: 80px;
+    }
+    &-btn{
+      margin-bottom: 32px;
+      &-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

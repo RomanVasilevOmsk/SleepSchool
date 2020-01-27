@@ -34,6 +34,7 @@ $block : ".mainLayout";
   &__header{
     padding-top: 70px;
     margin-bottom: 35px;
+    position: relative;
     @media (max-width: $sm-width) {
       margin-bottom: 30px;
     }
@@ -51,6 +52,12 @@ $block : ".mainLayout";
         display: flex;
         margin-top: 10px;
       }
+    }
+    &-prevLink{
+      position: absolute;
+      top: 20px;
+      left: -15px;
+      padding: 5px;
     }
   }
 }
