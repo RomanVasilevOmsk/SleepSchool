@@ -58,4 +58,30 @@ $block : ".sleepSchoolApp";
       }
     }
   }
+  &__noAccess{
+    &-wrapper{
+      margin-top: 80px;
+    }
+    &-title{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 150px;
+    }
+    &-footer{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 17px;
+      text-align: center;
+      color: #FFFFFF;
+      &-question{
+        margin-bottom: 40px;
+      }
+      &-label{
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
