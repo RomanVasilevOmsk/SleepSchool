@@ -7,11 +7,11 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  // font-family: 'Poppins', sans-serif;
   font-weight: 400;
   margin: 0;
   height: 100%;
-  color: #1B2D41;
+  color: #fff;
   font-size: 14px;
 }
 
@@ -63,4 +63,46 @@ div:focus{
 
 input{
   border: none;
+}
+
+.blockBg{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  &--blue{
+    background-image: url("../images/blocks-bg/block-bg--blue.png");
+    @media only screen and (-Webkit-min-device-pixel-ratio: 2){
+      background-image: url("../images/blocks-bg/block-bg--blue@2x.png");
+    }
+    @media only screen and (-Webkit-min-device-pixel-ratio: 3){
+      background-image: url("../images/blocks-bg/block-bg--blue@3x.png");
+    }
+  }
+  &--orange{
+    background-image: url("../images/blocks-bg/block-bg--orange.png");
+    @media only screen and (-Webkit-min-device-pixel-ratio: 2){
+      background-image: url("../images/blocks-bg/block-bg--orange@2x.png");
+    }
+    @media only screen and (-Webkit-min-device-pixel-ratio: 3){
+      background-image: url("../images/blocks-bg/block-bg--orange@3x.png");
+    }
+  }
+  &--purple{
+    background-image: url("../images/blocks-bg/block-bg--purple.png");
+    @media only screen and (-Webkit-min-device-pixel-ratio: 2){
+      background-image: url("../images/blocks-bg/block-bg--purple@2x.png");
+    }
+    @media only screen and (-Webkit-min-device-pixel-ratio: 3){
+      background-image: url("../images/blocks-bg/block-bg--purple@3x.png");
+    }
+  }
+  &--green{
+    background-image: url("../images/blocks-bg/block-bg--green.png");
+    @media only screen and (-Webkit-min-device-pixel-ratio: 2){
+      background-image: url("../images/blocks-bg/block-bg--green@2x.png");
+    }
+    @media only screen and (-Webkit-min-device-pixel-ratio: 3){
+      background-image: url("../images/blocks-bg/block-bg--green@3x.png");
+    }
+  }
 }

@@ -23,4 +23,34 @@ $block : ".mainLayout";
       background-image: url("../images/main-background-mobile@3x.png");
     }
   }
+  &__inner{
+    max-width: 908px;
+    margin: 0 auto;
+    padding: 0 60px;
+    @media (max-width: $sm-width) {
+      padding: 0 20px;
+    }
+  }
+  &__header{
+    padding-top: 70px;
+    margin-bottom: 35px;
+    @media (max-width: $sm-width) {
+      margin-bottom: 30px;
+    }
+    &-title{
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 24px;
+      color: #FFFFFF;
+      position: relative;
+      &:after{
+        content: "";
+        width: 32px;
+        height: 2px;
+        background: #0098C3;
+        display: flex;
+        margin-top: 10px;
+      }
+    }
+  }
 }

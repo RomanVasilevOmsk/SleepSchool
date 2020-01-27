@@ -8,13 +8,34 @@
         <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800&display=swap" rel="stylesheet"> -->
     </head>
 <body>
-  <div class="mainLayout signIn__wrapper">
-    <img src="images/logo.svg" class="signIn__logo" alt="logo">
-    @@include('./partial/signInForm.html')
-    <img src="images/hsbc-logo.svg" class="signIn__hsbcLogo" alt="logo">
+  <div class="mainLayout">
+    <div class="mainLayout__inner">
+      <header class="mainLayout__header">
+        <p class="mainLayout__header-title">Choose Media</p>
+      </header>
 
+      <div class="chooseMedia__wrapper">
+        <ul class="chooseMedia__list">
+          <li class="chooseMedia__item blockBg blockBg--blue link">
+            <a href="#" class="chooseMedia__item-link">Live Streams</a>
+          </li>
+          <li class="chooseMedia__item blockBg blockBg--blue link">
+            <a href="#" class="chooseMedia__item-link">Sleep Help Films</a>
+          </li>
+          <li class="chooseMedia__item blockBg blockBg--blue link">
+            <a href="#" class="chooseMedia__item-link">Sleep School App</a>
+          </li>
+        </ul>
+
+        <a href="#" class="chooseMedia__logOutBtn link">LOG OUT</a>
+
+        <img src="images/hsbc-logo.svg" class="chooseMedia__hsbcLogo" alt="logo">
+
+      </div>
+
+
+    </div>
   </div>
 
-<script src="js/scripts.js"></script>
 </body>
 </html>

@@ -21,7 +21,8 @@
     "css-mqpacker": "^7.0.0",
     "gulp-file-include": "^2.1.0",
     "gulp-merge-media-queries": "^0.2.1",
-    "gulp-uglifycss": "^1.1.0"
+    "gulp-uglifycss": "^1.1.0",
+    "node-gyp": "^6.1.0"
   },
   "description": ""
 }
