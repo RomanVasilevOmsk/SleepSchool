@@ -5,9 +5,10 @@ $block : ".sleepSchoolApp";
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
+    padding-bottom: 40px;
   }
   &__title{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     line-height: 26px;
     text-align: center;
@@ -50,6 +51,7 @@ $block : ".sleepSchoolApp";
     }
   }
   &__footer{
+    margin-bottom: 20px;
     &-title{
       font-size: 16px;
       line-height: 17px;
@@ -115,6 +117,43 @@ $block : ".sleepSchoolApp";
       margin-bottom: 50px;
       &-input{
         margin-bottom: 35px;
+      }
+    }
+  }
+  &__createAccount{
+    &-wrapper{
+      text-align: center;
+    }
+    &-good{
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 22px;
+      color: #FFFFFF;
+      margin-bottom: 30px;
+    }
+    &-subtitle{
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 22px;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+    &-form{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      &-input{
+        margin-bottom: 18px;
+      }
+      &-footer{
+        font-size: 16px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+      }
+      &-link{
+        color: #F5A623;
       }
     }
   }

@@ -31,12 +31,14 @@ var paths = {
         html:'src/**/*.html',
         style:'src/scss/app.scss',
         script:'src/js/*.js',
+        fonts: 'src/fonts/*.*',
         contentImages: 'src/images/**/*.*',
     },
     dist: {
         html:'dist/',
         css:'dist/css/',
         script:'dist/js/',
+        fonts: 'dist/fonts/',
         contentImages: 'dist/images/',
     },
     watch: {
@@ -131,10 +133,10 @@ gulp.task('images', function() {
     gulp.src(paths.src.contentImages)
         .pipe(gulp.dest(paths.dist.contentImages))
 });
-// gulp.task('fonts', function() {
-//     gulp.src(paths.src.fonts)
-//         .pipe(gulp.dest(paths.dist.fonts))
-// });
+gulp.task('fonts', function() {
+    gulp.src(paths.src.fonts)
+        .pipe(gulp.dest(paths.dist.fonts))
+});
 // gulp.task('files', function() {
 //     gulp.src('src/soglashenie.pdf')
 //         .pipe(gulp.dest('dist/'))
@@ -148,7 +150,7 @@ gulp.task('build', [
     'scripts',
     // 'scripts:vendor',
     // 'files',
-    // 'fonts',
+    'fonts',
     // 'scripts:vendorMap',
     // 'scripts:vendorLightgallery',
     // 'scripts:vendorSlick',
