@@ -157,4 +157,22 @@ $block : ".sleepSchoolApp";
       }
     }
   }
+  &__confirmAddress{
+    &-wrapper{
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      color: #FFFFFF;
+      max-width: 320px;
+    }
+    &-title{
+     margin-bottom: 30px;
+    }
+    &-subTitle{
+      margin-bottom: 40px;
+    }
+    &-emailIcon{
+      margin-bottom: 25px;
+    }
+  }
 }
