@@ -18,7 +18,7 @@ $font-Omnes: 'Omnes', sans-serif;
   font-family: 'Omnes';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/Omnes-Regular.ttf');
+  src: url('../fonts/Omnes-Regular.otf');
 }
 
 @font-face {
@@ -27,6 +27,13 @@ $font-Omnes: 'Omnes', sans-serif;
   font-weight: 500;
   src: url('../fonts/omnes-medium-webfont.ttf');
 }
+@font-face {
+  font-family: 'Omnes';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/Omnes-Semibold.otf');
+}
+
 
 @font-face {
   font-family: 'Omnes';

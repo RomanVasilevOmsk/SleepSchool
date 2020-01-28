@@ -8,7 +8,7 @@ $block : ".sleepSchoolApp";
     padding-bottom: 40px;
   }
   &__title{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 24px;
     line-height: 26px;
     text-align: center;
@@ -159,6 +159,7 @@ $block : ".sleepSchoolApp";
   }
   &__confirmAddress{
     &-wrapper{
+      margin-top: 80px;
       font-size: 20px;
       line-height: 28px;
       text-align: center;
@@ -173,6 +174,49 @@ $block : ".sleepSchoolApp";
     }
     &-emailIcon{
       margin-bottom: 25px;
+    }
+  }
+  &__applyVoucher{
+    &-wrapper{
+      font-size: 20px;
+      line-height: 22px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-top: 30px;
+    }
+    &-title{
+      margin-bottom: 45px;
+    }
+    &-term{
+      margin: 40px 0 30px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 26px;
+      text-align: center;
+      color: #F5A623;
+    }
+    &-desc{
+      margin-bottom: 20px;
+    }
+    &-btn{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    &-links{
+      display: flex;
+      margin-bottom: 40px;
+    }
+    &-emailLink {
+      color: #fff;
+    }
+    &-link{
+      color: #F5A623;
+      text-decoration: underline;
+      &:hover{
+        cursor: pointer;
+        text-decoration: none;
+      }
     }
   }
 }
