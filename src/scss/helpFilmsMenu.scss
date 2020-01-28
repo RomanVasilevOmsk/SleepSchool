@@ -1,0 +1,49 @@
+$block : ".helpFilmsMenu";
+
+#{$block}{
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    @media (max-width: $sm-width) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__item{
+    max-width: 338px;
+    width: 100%;
+    height: 135px;
+    border-radius: 8px;
+    margin: 0 20px 40px;
+    @media (max-width: $sm-width) {
+      margin: 0 0 25px;
+    }
+    &-link{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &-title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        color: #fff;
+        margin-bottom: 15px;
+      }
+      &-subTitle{
+        font-size: 18px;
+        line-height: 24px;
+        color: #fff;
+      }
+    }
+  }
+  &__hsbcLogo{
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 35px;
+  }
+}
