@@ -219,4 +219,61 @@ $block : ".sleepSchoolApp";
       }
     }
   }
+  &__voucherApplied{
+    &-wrapper{
+      margin-top: 40px;
+    }
+    &-have{
+      margin: 25px 0 15px;
+      font-size: 20px;
+      line-height: 22px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    &-term{
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 26px;
+      text-align: center;
+      color: #F5A623;
+      margin-bottom: 40px;
+    }
+    &-download{
+      font-size: 20px;
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 30px;
+      & span{
+        color: #F5A623;
+      }
+    }
+    &-downloads{
+      display: flex;
+      margin-bottom: 30px;
+      &-link{
+        &:first-child{
+          margin-right: 24px;
+        }
+      }
+    }
+    &-desc{
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+    &-subDesc{
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+    &-links{
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
