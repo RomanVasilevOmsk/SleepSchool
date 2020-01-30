@@ -1,0 +1,147 @@
+$block : ".film";
+
+#{$block}{
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__player{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 633px;
+    min-height: 316px;
+    margin-bottom: 25px;
+    @media (max-width: $sm-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 633px;
+    margin-bottom: 10px;
+    &:after{
+      content: "";
+      width: 32px;
+      height: 2px;
+      background: #0098C3;
+      display: flex;
+      margin-top: 10px;
+    }
+  }
+
+  &__accordion{
+    &-wrapper{
+      width: 100%;
+      max-width: 633px;
+      margin-bottom: 50px;
+    }
+    &-item{
+      margin-bottom: 20px;
+    }
+    &-trigger{
+      position: relative;
+      width: 100%;
+      transition: 0.4s;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      &--active{
+        #{$block}#{__accordion-trigger-inner}{
+          &:after{
+            transform: rotate(90deg);
+          }
+        }
+      }
+      &-play{
+        border: 11px solid transparent;
+        border-left: 15px solid #47b8d7;
+      }
+      &-inner{
+        display: flex;
+        flex-direction: column;
+        &:after{
+          content: "";
+          display: flex;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 24px;
+          height: 24px;
+          transition: transform 0.2s ease;
+          transform: rotate(270deg);
+          background-image: url("../images/prev-arrow-left.svg");
+        }
+      }
+      &-title{
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 22px;
+        color: #fff;
+      }
+      &-time{
+        font-size: 15px;
+        line-height: 24px;
+        color: #FFFFFF;
+        opacity: 0.6;
+      }
+    }
+    &-body{
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      margin: 15px 30px;
+      line-height: 22px;
+    }
+  }
+  &__info{
+    &-wrapper{
+      width: 100%;
+      max-width: 633px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      &:after{
+        content: "";
+        width: 32px;
+        height: 2px;
+        background: #0098C3;
+        display: flex;
+        margin-top: 8px;
+      }
+    }
+    &-trigger{
+      &:before{
+        content: "More Info";
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        color: #47B8D7
+      }
+      &--active{
+        &:before{
+          content: "Less Info";
+        }
+      }
+    }
+    &-body{
+      line-height: 22px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+  }
+  &__hsbcLogo{
+    margin-bottom: 35px;
+  }
+}
+

@@ -14,53 +14,72 @@
           <img src="images/prev-arrow-left.svg" class="mainLayout__header-prevLink-img" alt="prev">
         </a>
 
-        <p class="mainLayout__header-title">Sleep Help Films</p>
       </header>
 
-      <div class="helpFilmsMenu__wrapper">
-        <ul class="helpFilmsMenu__list">
-          <li class="helpFilmsMenu__item blockBg blockBg--blue link">
-            <a href="#" class="helpFilmsMenu__item-link">
-              <p class="helpFilmsMenu__item-link-title">Sleep School</p>
-              <p class="helpFilmsMenu__item-link-subTitle">Who we are and about these films</p>
-            </a>
-          </li>
-          <li class="helpFilmsMenu__item blockBg blockBg--blue link">
-            <a href="#" class="helpFilmsMenu__item-link">
-              <p class="helpFilmsMenu__item-link-title">Sleep Essentials</p>
-              <p class="helpFilmsMenu__item-link-subTitle">The most important sleep knowledge</p>
-            </a>
-          </li>
-          <li class="helpFilmsMenu__item blockBg blockBg--orange link">
-            <a href="#" class="helpFilmsMenu__item-link">
-              <p class="helpFilmsMenu__item-link-title">Perform</p>
-              <p class="helpFilmsMenu__item-link-subTitle">How to limit stress affecting your sleep</p>
-            </a>
-          </li>
-          <li class="helpFilmsMenu__item blockBg blockBg--purple link">
-            <a href="#" class="helpFilmsMenu__item-link">
-              <p class="helpFilmsMenu__item-link-title">Transition</p>
-              <p class="helpFilmsMenu__item-link-subTitle">How to detach from work, after work</p>
-            </a>
-          </li>
-          <li class="helpFilmsMenu__item blockBg blockBg--green link">
-            <a href="#" class="helpFilmsMenu__item-link">
-              <p class="helpFilmsMenu__item-link-title">Sleep</p>
-              <p class="helpFilmsMenu__item-link-subTitle">How to sleep well at night</p>
-            </a>
-          </li>
-          <li class="helpFilmsMenu__item blockBg blockBg--blue link">
-            <a href="#" class="helpFilmsMenu__item-link">
-              <p class="helpFilmsMenu__item-link-title">Child Sleep</p>
-              <p class="helpFilmsMenu__item-link-subTitle">Baby to teenager sleep help</p>
-            </a>
-          </li>
-        </ul>
+      <div class="film__wrapper">
+        <div class="film__player">
+          <iframe id="film" src="https://player.vimeo.com/video/34602021?autoplay=1" width="633" transparent autoplay height="340" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <p class="film__title">Sleep Essentials</p>
+
+        <div class="film__info-wrapper">
+          <div class="film__info-trigger"></div>
+          <div class="film__info-body">
+            Sleep Essentials will teach you the basic fundamentals of sleep science. We will cover how sleep affects you cognitively and emotionally.
+          </div>
+        </div>
+
+
+        <div class="film__accordion-wrapper">
+          <div class="film__accordion-item">
+            <div class="film__accordion-trigger">
+              <div class="film__accordion-trigger-play" data-time="0"></div>
+              <div class="film__accordion-trigger-inner">
+                <p class="film__accordion-trigger-title">Introduction</p>
+                <p class="film__accordion-trigger-time">0:00 - 1:45</p>
+              </div>
+            </div>
+
+            <div class="film__accordion-body">
+              <p>
+                We will cover: <br/>
+                - What is sleep anyway<br/>
+                - How to get a better night’s sleep<br/>
+                - The best time to sleep<br/>
+                - How to powernap effectively during the day
+              </p>
+            </div>
+          </div>
+
+          <div class="film__accordion-item">
+            <div class="film__accordion-trigger">
+              <div class="film__accordion-trigger-play" data-time="106"></div>
+              <div class="film__accordion-trigger-inner">
+                <p class="film__accordion-trigger-title">What is sleep anyway?</p>
+                <p class="film__accordion-trigger-time">1:46 - 3:10</p>
+              </div>
+            </div>
+
+            <div class="film__accordion-body">
+              <p>
+                We will cover: <br/>
+                - What is sleep anyway<br/>
+                - How to get a better night’s sleep<br/>
+                - The best time to sleep<br/>
+                - How to powernap effectively during the day
+              </p>
+            </div>
+          </div>
+
+        </div>
+
         <img src="images/hsbc-logo.svg" class="helpFilmsMenu__hsbcLogo" alt="logo">
       </div>
 
     </div>
   </div>
-
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
