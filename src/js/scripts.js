@@ -33,10 +33,26 @@ var moreInfo = function() {
   }
 };
 
+function setTabStream(evt, streamName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("stream__tab-content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("stream__tab-link");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" stream__tab-link--active", "");
+  }
+  document.getElementById(streamName).style.display = "block";
+  evt.currentTarget.className += " stream__tab-link--active";
+}
+
+
 
 document.addEventListener("DOMContentLoaded", function(event) {
   accordion.apply();
   moreInfo.apply();
+  document.getElementById("defaultOpen").click();
 });
 
 

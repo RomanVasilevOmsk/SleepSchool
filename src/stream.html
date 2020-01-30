@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Sleep School</title>
+        <link rel="stylesheet" href="css/app.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body>
+  <div class="mainLayout">
+    <div class="mainLayout__inner">
+      <header class="mainLayout__header">
+        <a href="#" class="mainLayout__header-prevLink link">
+          <img src="images/prev-arrow-left.svg" class="mainLayout__header-prevLink-img" alt="prev">
+        </a>
+
+        <p class="mainLayout__header-title">Live Stream</p>
+      </header>
+
+      <div class="stream__wrapper">
+        <!-- <p class="stream__empty">
+          No current live streams
+        </p> -->
+        <div class="stream__tab-wrapper">
+          <div class="stream__tab-header">
+            <button class="stream__tab-link" id="defaultOpen" onclick="setTabStream(event, 'Live')">Live</button>
+            <button class="stream__tab-link" onclick="setTabStream(event, 'Past')">Past</button>
+          </div>
+          <div class="stream__tab-content-list">
+            <div id="Live" class="stream__tab-content">
+              <iframe src="https://player.vimeo.com/video/34602021" width="633" transparent  height="340" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div id="Past" class="stream__tab-content">
+              <iframe src="https://player.vimeo.com/video/34602021" width="633" transparent  height="340" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <img src="images/hsbc-logo.svg" class="helpFilmsMenu__hsbcLogo" alt="logo">
+      </div>
+
+    </div>
+  </div>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
